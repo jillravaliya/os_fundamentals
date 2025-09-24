@@ -113,7 +113,7 @@ Computer = **factory**:
 lscpu   # Shows CPU details
 free -h # Shows RAM usage
 lsblk   # Shows storage devices
-
+```
 
 
 # Layer 2: Kernel – The Heart of the OS
@@ -207,7 +207,7 @@ uname -r     # Show kernel version
 dmesg        # Kernel messages, device initialization logs
 top          # Shows processes managed by kernel
 lsmod        # Lists loaded kernel modules
-
+```
 
 
 # Layer 3: System Libraries / APIs – The Translator Layer
@@ -295,8 +295,7 @@ lsmod        # Lists loaded kernel modules
 ```bash
 ldd /bin/ls   # Shows which libraries an executable uses
 man 2 open    # Shows kernel system call 'open'
-
-
+```
 
 # Layer 4: User Interface (UI) – Human Interaction Layer
 
@@ -375,7 +374,7 @@ cd        # Change directory
 mkdir     # Make directory
 top       # Show running processes
 df -h     # Check storage usage
-
+```
 
 
 # Layer 5: Processes / Task Management – How Linux Runs Programs
@@ -451,7 +450,7 @@ top           # Real-time process monitoring
 htop          # Interactive process viewer
 kill <PID>    # Terminate a process
 nice / renice # Set process priority
-
+```
 
 
 # Layer 6: File System / Storage Management – How Linux Organizes Data
@@ -534,7 +533,7 @@ mount        # Show mounted devices
 umount       # Unmount device
 chmod        # Change permissions
 chown        # Change file owner
-
+```
 
 
 # Layer 7: Networking / Communication – How Linux Talks to the World
@@ -584,7 +583,7 @@ netstat -tuln       # Show open ports and services
 ss -tuln            # Modern alternative to netstat
 traceroute <host>   # Show path packets take to reach host
 curl <url>          # Send HTTP requests
-
+```
 
 
 # End-to-End Example: Opening a Web Page in Firefox
@@ -620,3 +619,4 @@ Layer 7: Networking (send HTTPS request, receive response)
       │ - NIC sends TCP/IP packets to internet
       ▼
 User sees webpage rendered in Firefox GUI
+```
